@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@media (max-width: 500px) {
+  h2 {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
 .form_section {
   display: flex;
   flex-direction: column;
@@ -7,6 +14,11 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+@media (max-width: 500px) {
+  .form_section {
+    width: 100%;
+  }
 }
 
 .RouterLink {
@@ -17,6 +29,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .div_forms {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
 }
 
 .input_class {
@@ -111,13 +130,27 @@ body {
   font-weight: 550;
   font-style: normal;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .button_element {
-  padding: 5px 10px;
+  padding: 5px 20px;
   background-color: rgb(49, 49, 49);
   color: green;
   border-radius: 5px;
   border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .button_element {
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 13px;
+  }
 }
 
 .button_element:hover {
@@ -138,6 +171,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .line_buttons {
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 /**
